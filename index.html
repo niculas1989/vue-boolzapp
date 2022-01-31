@@ -79,22 +79,10 @@
                                 <!-- TODO cambiare la disposizione e usare la logica di VUE -->
                                 <div class="col 12">
                                     <div class="row">
-                                        <div id="chat">
+                                        <div id="chat" v-for="(contact, index) in contacts">
                                             <div class="col-12 background-gray">
                                                 <img class="w-25" src="img/avatar_1.jpg" alt="Foto profilo chat">
-                                                <span class="ms-3">Pippo</span>
-                                            </div>
-                                            <div class="col-12">
-                                                <img class="w-25" src="img/avatar_2.jpg" alt="Foto profilo chat">
-                                                <span class="ms-3">Pluto</span>
-                                            </div>
-                                            <div class="col-12">
-                                                <img class="w-25" src="img/avatar_3.jpg" alt="Foto profilo chat">
-                                                <span class="ms-3">Topolino</span>
-                                            </div>
-                                            <div class="col-12">
-                                                <img class="w-25" src="img/avatar_4.jpg" alt="Foto profilo chat">
-                                                <span class="ms-3">Paperino</span>
+                                                <span class="ms-3">{{ contact.name }}</span>
                                             </div>
                                         </div>
                                     </div>
