@@ -38,3 +38,20 @@ i {
 #bell {
     border-radius: 50%;
 }
+
+#messagges-info {
+    height: 10%;
+}
+
+#user-pic {
+
+}
+
+#messagges-chat {
+    background-image: url(../img/mine.jpg);
+    height: 80%;
+}
+
+#messagges-letters {
+    height: 10%;
+}
