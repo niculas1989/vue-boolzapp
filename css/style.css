@@ -6,8 +6,11 @@ body{
 }
 
 #main-info {
-    /* background-color: black; */
     height: 90%;
+}
+
+#chat-info {
+    background-color: white;
 }
 
 #user-info img {
