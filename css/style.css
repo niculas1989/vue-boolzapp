@@ -53,10 +53,14 @@ i {
 }
 
 .background-sent {
+    height: 80px;
+    width: 120px;
     background-color: lightgreen;
 }
 
 .background-received {
+    height: 80px;
+    width: 120px;
  background-color: lightgrey;
 }
 
