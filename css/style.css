@@ -51,3 +51,15 @@ i {
 #messagges-letters {
     height: 10%;
 }
+
+.background-sent {
+    background-color: lightgreen;
+}
+
+.background-received {
+ background-color: gray;
+}
+
+#chat {
+    overflow-y: visible;
+}
