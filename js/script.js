@@ -18,3 +18,31 @@ All'interno della cartella trovate le immagini che vi servono e la struttura dat
 Sono a disposizione per i ticket fino alle 13 e nel pomeriggio i tutor saranno disponibili dallle 15 alle 18
 NON MODIFICATE LA STRUTTURA DATI FORNITA
 */
+
+const root = new Vue({
+    el: '#root',
+    data: {
+        user: {
+            name: 'Nicolas',
+            avatar: '_io'
+        },
+        contacts: [
+            {
+                name: 'Pippo',
+                avatar: '_1',
+            },
+            {
+                name: 'Pluto',
+                avatar: '_2',
+            },
+            {
+                name: 'Paperino',
+                avatar: '_3',
+            },
+            {
+                name: 'Topolino',
+                avatar: '_4',
+            },
+        ]
+    }
+});
