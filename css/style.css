@@ -13,3 +13,7 @@ body{
 #user-info img {
     border-radius: 50%;
 }
+
+.background-gray {
+    background-color: lightgray;
+}
