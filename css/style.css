@@ -9,7 +9,14 @@ body{
     height: 90%;
 }
 
+
+
 #chat-info {
+    min-height: 100%;
+    background-color: white;
+}
+
+#chat-info .row {
     background-color: white;
 }
 
