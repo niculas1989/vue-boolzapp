@@ -9,3 +9,7 @@ body{
     /* background-color: black; */
     height: 90%;
 }
+
+#user-info img {
+    border-radius: 50%;
+}
