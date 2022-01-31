@@ -1,4 +1,6 @@
 body{
     height: 100vh;
+
+    /* TODO cercare come farlo esattamente come lo screen */
     background: linear-gradient(green, darkgray);
 }
