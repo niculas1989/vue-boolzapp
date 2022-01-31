@@ -21,3 +21,11 @@ body{
 #user-info i {
     color: darkgray;
 }
+
+#silencer {
+    background-color: lightblue;
+}
+
+#bell {
+    border-radius: 50%;
+}
