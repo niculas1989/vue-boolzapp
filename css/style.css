@@ -13,7 +13,7 @@ body{
     background-color: white;
 }
 
-#user-info img {
+img {
     border-radius: 50%;
 }
 
@@ -21,7 +21,7 @@ body{
     background-color: lightgray;
 }
 
-#user-info i {
+i {
     color: darkgray;
 }
 
