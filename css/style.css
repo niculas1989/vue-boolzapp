@@ -4,3 +4,8 @@ body{
     /* TODO cercare come farlo esattamente come lo screen */
     background: linear-gradient(green, darkgray);
 }
+
+#main-info {
+    background-color: black;
+    height: 90%;
+}
