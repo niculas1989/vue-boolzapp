@@ -17,3 +17,7 @@ body{
 .background-gray {
     background-color: lightgray;
 }
+
+#user-info i {
+    color: darkgray;
+}
