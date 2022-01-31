@@ -23,7 +23,7 @@ const root = new Vue({
     el: '#root',
     data: {
         user: {
-            name: 'Nicolas',
+            name: 'Paperina',
             avatar: '_io'
         },
         contacts: [
