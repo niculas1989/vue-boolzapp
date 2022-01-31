@@ -1,8 +1,7 @@
 body{
     height: 100vh;
-
-    /* TODO cercare come farlo esattamente come lo screen */
-    background: linear-gradient(green, darkgray);
+    background: rgb(117,117,117);
+    background: linear-gradient(0deg, rgb(117,117,117) 80%, rgb(0,196,24) 70%, rgb(0,196,24) 100%);
 }
 
 #main-info {
@@ -28,11 +27,11 @@ i {
 }
 
 #silencer {
-    background-color: rgb(51, 168, 207);
+    background-color: rgb(65, 208, 255);
 }
 
 #bell {
-    color:rgb(51, 168, 207);
+    color:rgb(65, 208, 255);
 }
 
 .bck-bell {
@@ -40,6 +39,10 @@ i {
     width: 80px;
     border-radius: 50%;
     background-color: #fff;
+}
+
+.text-gray {
+    color: gray;
 }
 
 #messagges-info {
