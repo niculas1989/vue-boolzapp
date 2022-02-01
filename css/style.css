@@ -41,6 +41,10 @@ i {
     color:rgb(65, 208, 255);
 }
 
+.hover:hover {
+    background-color: #dedede;
+}
+
 .bck-bell {
     height: 50px;
     width: 50px;
