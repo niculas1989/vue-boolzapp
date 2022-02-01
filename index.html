@@ -79,7 +79,7 @@
                                 <div class="col 12">
                                     <div class="row">
                                         <div id="chat" v-for="(contact, index) in contacts">
-                                            <div class="col-12" role="button">
+                                            <div class="col-12" role="button" @click="showChat(index)">
                                                 <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
                                                     alt="Foto profilo chat">
                                                 <span class="ms-3">{{ contact.name }}</span>
