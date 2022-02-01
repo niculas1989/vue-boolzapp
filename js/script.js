@@ -119,21 +119,21 @@ const root = new Vue({
                 }
                 ],
             },
-        ],
-        methods: {
-            isActive(index) {
-                if (this.visible === 'true') {
-                    index === this.currentIndex;
-                }
-            },
-            showChat(index) {
-                if (index === this.currentIndex) {
-                    this.visible = true;
-                }
-            },
-            setCurrentChat(index) {
-                this.currentIndex = index;
-            },
+        ]
+    },
+    methods: {
+        isActive(index) {
+            if (this.visible) {
+                index = this.currentIndex;
+            }
         },
-    }
+        showChat(index) {
+            if (index === this.currentIndex) {
+                this.visible = true;
+            }
+        },
+        setCurrentChat(index) {
+            this.currentIndex = index;
+        },
+    },
 });
