@@ -76,9 +76,9 @@
                                 </div>
 
                                 <!-- Qui andranno le informazioni dei contatti -->
-                                <div class="col 12">
-                                    <div class="row overflow-scroll">
-                                        <div id="chat" v-for="(contact, index) in contacts">
+                                <div class="row">
+                                    <div class="col 12">
+                                        <div v-for="(contact, index) in contacts">
                                             <div class="col-12" role="button" @click="setCurrentChat(index)">
                                                 <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
                                                     alt="Foto profilo chat">
