@@ -126,7 +126,8 @@
                                         <i class="far fa-smile-beam fa-2x" role="button"></i>
                                     </div>
                                     <div class="col-10 h-100">
-                                        <input class="h-100 w-100" type="text" placeholder="Scrivi un messaggio..">
+                                        <input class="h-100 w-100" type="text" placeholder="Scrivi un messaggio.."
+                                            v-model="newMessageElement" @keyup.enter="newMessage">
                                     </div>
                                     <div
                                         class="col-1 h-100 d-flex justify-content-center align-items-center background-gray">
