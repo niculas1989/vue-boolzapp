@@ -79,7 +79,7 @@
                                 <div class="col 12">
                                     <div class="row">
                                         <div id="chat" v-for="(contact, index) in contacts">
-                                            <div class="col-12">
+                                            <div class="col-12" role="button">
                                                 <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
                                                     alt="Foto profilo chat">
                                                 <span class="ms-3">{{ contact.name }}</span>
@@ -108,8 +108,8 @@
                                 <!-- conversazione vera e propria -->
                                 <div class="container">
                                     <ul class="px-3">
-                                        <li v-for="message in contacts[0].messages" class="message-container p-3"
-                                            :class="message.status">
+                                        <li v-for="(message, index) in contacts[0].messages"
+                                            class="message-container p-3" :class="message.status">
                                             <div class="message p-2 rounded-3">
                                                 <p>{{ message.text }}</p>
                                                 <time datetime="2021-08-03t09:53">{{ message.date }}</time>

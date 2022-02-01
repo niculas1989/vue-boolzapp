@@ -34,6 +34,7 @@ Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente r
 const root = new Vue({
     el: '#root',
     data: {
+        currentIndex: 0,
         user: {
             name: 'Topolina',
             avatar: '_io'
@@ -120,7 +121,14 @@ const root = new Vue({
             },
         ],
         methods: {
-            visibility
+            isActive(index) {
+                return index === this.currentIndex;
+            },
+            showChat(index) {
+                if (index === this.currentIndex) {
+                    this.visible = true;
+                }
+            },
         },
     }
 });
