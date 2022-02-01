@@ -1,6 +1,8 @@
 console.log('JS Ok');
 console.log('Vue ok', Vue);
 
+dayjs.extend(dayjs_plugin_customParseFormat);
+
 Vue.config.devtools = true;
 
 /*
@@ -141,10 +143,10 @@ const root = new Vue({
             const listElement = this.newMessageElement.trim();
 
             if (listElement) {
-                this.contacts[this.currentIndex].messages.push({ text: listElement, date: dayjs(), status: 'sent' });
+                this.contacts[this.currentIndex].messages.push({ text: listElement, date: dayjs().format('DD/MM/YYYY HH:mm:ss'), status: 'sent' });
 
                 setTimeout(() => {
-                    this.contacts[this.currentIndex].messages.push({ text: 'ok', date: dayjs(), status: 'received' });
+                    this.contacts[this.currentIndex].messages.push({ text: 'ok', date: dayjs().format('DD/MM/YYYY HH:mm:ss'), status: 'received' });
                 }, 2000)
 
             }
