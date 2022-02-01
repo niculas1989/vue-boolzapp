@@ -141,10 +141,10 @@ const root = new Vue({
             const listElement = this.newMessageElement.trim();
 
             if (listElement) {
-                this.contacts[this.currentIndex].messages.push({ text: listElement, date: '10/01/2020 15:50:00', status: 'sent' });
+                this.contacts[this.currentIndex].messages.push({ text: listElement, date: dayjs(), status: 'sent' });
 
                 setTimeout(() => {
-                    this.contacts[this.currentIndex].messages.push({ text: 'ok', date: '10/01/2020 15:50:00', status: 'received' });
+                    this.contacts[this.currentIndex].messages.push({ text: 'ok', date: dayjs(), status: 'received' });
                 }, 2000)
 
             }
