@@ -35,6 +35,7 @@ const root = new Vue({
     el: '#root',
     data: {
         newMessageElement: '',
+        newAnswerElement: '',
         currentIndex: 0,
         user: {
             name: 'Topolina',
@@ -138,8 +139,14 @@ const root = new Vue({
         },
         newMessage() {
             const listElement = this.newMessageElement.trim();
+
             if (listElement) {
                 this.contacts[this.currentIndex].messages.push({ text: listElement, date: '10/01/2020 15:50:00', status: 'sent' });
+
+                setTimeout(() => {
+                    this.contacts[this.currentIndex].messages.push({ text: 'ok', date: '10/01/2020 15:50:00', status: 'received' });
+                }, 2000)
+
             }
             this.newMessageElement = '';
         },
