@@ -8,6 +8,13 @@ body{
     height: 90vh;
 }
 
+.display-n {
+    display: none;
+}
+
+.display-y {
+    display: block;
+}
 
 
 #chat-info {

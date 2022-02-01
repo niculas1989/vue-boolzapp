@@ -129,6 +129,9 @@ const root = new Vue({
                     this.visible = true;
                 }
             },
+            setCurrentChat(index) {
+                this.currentIndex = index;
+            },
         },
     }
 });
