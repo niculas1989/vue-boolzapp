@@ -108,16 +108,11 @@
                                 <!-- conversazione vera e propria -->
                                 <div class="container">
                                     <ul class="px-3">
-                                        <li class="message-container p-3 sent">
+                                        <li v-for="message in contacts[0].messages" class="message-container p-3"
+                                            :class="message.status">
                                             <div class="message p-2 rounded-3">
-                                                <p>Hai portato a spasso il cane?</p>
-                                                <time datetime="2021-08-03t09:53">01/02/2022 - 11.30</time>
-                                            </div>
-                                        </li>
-                                        <li class="message-container p-3 received">
-                                            <div class="message p-2 rounded-3">
-                                                <p>Si!</p>
-                                                <time datetime="2021-08-03t09:53">01/02/2022 - 11.35</time>
+                                                <p>{{ message.text }}</p>
+                                                <time datetime="2021-08-03t09:53">{{ message.date }}</time>
                                             </div>
                                         </li>
                                     </ul>
