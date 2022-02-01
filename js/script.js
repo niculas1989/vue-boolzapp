@@ -34,6 +34,7 @@ Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente r
 const root = new Vue({
     el: '#root',
     data: {
+        newMessageElement: '',
         currentIndex: 0,
         user: {
             name: 'Topolina',
@@ -134,6 +135,9 @@ const root = new Vue({
         },
         setCurrentChat(index) {
             this.currentIndex = index;
+        },
+        newMessage() {
+
         },
     },
 });
