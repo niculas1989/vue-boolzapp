@@ -40,7 +40,7 @@ const root = new Vue({
         },
         contacts: [
             {
-                name: 'Michele',
+                name: 'Pippo',
                 avatar: '_1',
                 visible: true,
                 messages: [{
@@ -61,7 +61,7 @@ const root = new Vue({
                 ],
             },
             {
-                name: 'Fabio',
+                name: 'Pluto',
                 avatar: '_2',
                 visible: true,
                 messages: [{
@@ -82,7 +82,7 @@ const root = new Vue({
                 ],
             },
             {
-                name: 'Samuele',
+                name: 'Paperino',
                 avatar: '_3',
                 visible: true,
                 messages: [{
@@ -103,7 +103,7 @@ const root = new Vue({
                 ],
             },
             {
-                name: 'Luisa',
+                name: 'Topolino',
                 avatar: '_4',
                 visible: true,
                 messages: [{
