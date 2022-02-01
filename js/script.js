@@ -45,7 +45,7 @@ const root = new Vue({
             {
                 name: 'Pippo',
                 avatar: '_1',
-                visible: false,
+                visible: true,
                 messages: [{
                     date: '10/01/2020 15:30:55',
                     text: 'Hai portato a spasso il cane?',
@@ -66,7 +66,7 @@ const root = new Vue({
             {
                 name: 'Pluto',
                 avatar: '_2',
-                visible: false,
+                visible: true,
                 messages: [{
                     date: '20/03/2020 16:30:00',
                     text: 'Ciao come stai?',
@@ -87,7 +87,7 @@ const root = new Vue({
             {
                 name: 'Paperino',
                 avatar: '_3',
-                visible: false,
+                visible: true,
                 messages: [{
                     date: '28/03/2020 10:10:40',
                     text: 'La Marianna va in campagna',
@@ -108,7 +108,7 @@ const root = new Vue({
             {
                 name: 'Topolino',
                 avatar: '_4',
-                visible: false,
+                visible: true,
                 messages: [{
                     date: '10/01/2020 15:30:55',
                     text: 'Lo sai che ha aperto una nuova pizzeria?',
@@ -121,6 +121,39 @@ const root = new Vue({
                 }
                 ],
             },
+            {
+                name: 'Topolino',
+                avatar: '_4',
+                visible: true,
+                messages: [{
+                    date: '10/01/2020 15:30:55',
+                    text: 'Lo sai che ha aperto una nuova pizzeria?',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 15:50:00',
+                    text: 'Si, ma preferirei andare al cinema',
+                    status: 'received'
+                }
+                ],
+            },
+            {
+                name: 'Topolino',
+                avatar: '_4',
+                visible: true,
+                messages: [{
+                    date: '10/01/2020 15:30:55',
+                    text: 'Lo sai che ha aperto una nuova pizzeria?',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 15:50:00',
+                    text: 'Si, ma preferirei andare al cinema',
+                    status: 'received'
+                }
+                ],
+            },
+
         ]
     },
     methods: {

@@ -46,7 +46,7 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <div class="bck-bell d-flex justify-content-center align-items-center">
-                                                    <span><i id="bell" class="far fa-bell-slash fa-3x"></i>
+                                                    <span><i id="bell" class="far fa-bell-slash fa-2x"></i>
                                                     </span>
                                                 </div>
                                             </div>
@@ -77,7 +77,7 @@
 
                                 <!-- Qui andranno le informazioni dei contatti -->
                                 <div class="col 12">
-                                    <div class="row">
+                                    <div class="row overflow-scroll">
                                         <div id="chat" v-for="(contact, index) in contacts">
                                             <div class="col-12" role="button" @click="setCurrentChat(index)">
                                                 <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
