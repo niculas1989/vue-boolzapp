@@ -53,6 +53,8 @@ i {
 
 }
 
+/* # MESSAGGES */
+
 #messagges-chat {
     background-image: url(../img/mine.jpg);
     height: 80%;
@@ -62,16 +64,34 @@ i {
     height: 10%;
 }
 
-.background-sent {
-    height: 80px;
-    width: 120px;
-    background-color: lightgreen;
+.message-container {
+    display: flex;
 }
 
-.background-received {
-    height: 80px;
-    width: 120px;
- background-color: lightgrey;
+.message-container.sent {
+    justify-content: flex-end;
+}
+.message-container.received {
+    justify-content: flex-start;
+}
+
+.message-container.sent .message {
+    background-color: #d5f9ba;
+}
+
+.message-container.received .message {
+    background-color: #fff;
+}
+
+.message-container .message p {
+    margin-bottom: 0;
+}
+
+.message-container .message time {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: #aaa;
 }
 
 #chat {
