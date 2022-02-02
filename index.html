@@ -67,6 +67,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- aria ricerca chat/utenti -->
                                 <div class="col-12 background-gray">
                                     <div class="input-group w-100">
                                         <div class="input-group-prepend">
@@ -95,6 +97,9 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- chat con diversi utenti -->
                     <div class="col-8 background-gray h-100">
                         <div class="row h-100">
                             <div id="messagges-info"
@@ -110,8 +115,10 @@
                                     <i class="me-3 fas fa-ellipsis-v fa-2x" role="button"></i>
                                 </div>
                             </div>
+
+
+                            <!-- conversazione vera e propria -->
                             <div id="messagges-chat" class="col-12 overflow-auto">
-                                <!-- conversazione vera e propria -->
                                 <div class="container">
                                     <ul class="px-3">
                                         <li v-for="(message, index) in contacts[currentIndex].messages"
@@ -126,6 +133,8 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <!-- scambio di messaggi tra un utente ed un altro -->
                             <div id="messagges-letters" class="col-12">
                                 <div class="row h-100">
                                     <div
