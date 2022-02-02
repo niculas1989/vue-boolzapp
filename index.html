@@ -84,7 +84,7 @@
 
                                 <div id="contacts">
                                     <ul v-for="(contact, index) in contacts" class="hover">
-                                        <li v-if="contact.visible == true" role="button" @click="setCurrentChat(index)"
+                                        <li v-if="contact.visible" role="button" @click="setCurrentChat(index)"
                                             class="active">
                                             <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
                                                 alt="Foto profilo chat">
