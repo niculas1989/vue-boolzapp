@@ -163,5 +163,12 @@ const root = new Vue({
             })
             return result;
         },
+        deleteText(index) {
+            this.contacts[this.currentIndex].messages = this.contacts[this.currentIndex].messages.filter((item, i) => {
+                if (index === i) return false
+                return true
+            })
+            this.isClicked = false;
+        },
     },
 });
