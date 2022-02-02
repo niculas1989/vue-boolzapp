@@ -78,17 +78,18 @@
                                 </div>
 
                                 <!-- Qui andranno le informazioni dei contatti -->
-                                <div class="row">
-                                    <div class="col 12">
-                                        <div v-for="(contact, index) in contacts" class="hover">
-                                            <div class="col-12" role="button" @click="setCurrentChat(index)">
-                                                <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
-                                                    alt="Foto profilo chat">
-                                                <span class="ms-3">{{ contact.name }}</span>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                                <div id="contacts">
+                                    <ul v-for="(contact, index) in contacts" class="hover">
+                                        <li role="button" @click="setCurrentChat(index)">
+                                            <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
+                                                alt="Foto profilo chat">
+                                            <span class="ms-3">{{ contact.name }}</span>
+                                        </li>
+                                    </ul>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>

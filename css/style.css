@@ -45,6 +45,10 @@ i {
     background-color: #dedede;
 }
 
+#contacts li {
+    list-style: none;
+}
+
 .bck-bell {
     height: 50px;
     width: 50px;
