@@ -5,6 +5,10 @@ dayjs.extend(dayjs_plugin_customParseFormat);
 
 Vue.config.devtools = true;
 
+const newText = (text, status) => {
+    this.contacts[this.currentIndex].messages.push({ text, date: dayjs().format('DD/MM/YYYY HH:mm:ss'), status });
+}
+
 /*
 MILESTONE DI OGGI //! DAY ONE
 Milestone 1
@@ -51,12 +55,12 @@ const root = new Vue({
         currentIndex: 0,
         search: '',
         user: {
-            name: 'Topolina',
+            name: 'Clara',
             avatar: '_io'
         },
         contacts: [
             {
-                name: 'Pippo',
+                name: 'Marco',
                 avatar: '_1',
                 visible: true,
                 messages: [{
@@ -77,7 +81,7 @@ const root = new Vue({
                 ],
             },
             {
-                name: 'Pluto',
+                name: 'Claudio',
                 avatar: '_2',
                 visible: true,
                 messages: [{
@@ -98,7 +102,7 @@ const root = new Vue({
                 ],
             },
             {
-                name: 'Paperino',
+                name: 'Aurelio',
                 avatar: '_3',
                 visible: true,
                 messages: [{
@@ -119,7 +123,7 @@ const root = new Vue({
                 ],
             },
             {
-                name: 'Topolino',
+                name: 'Ugo',
                 avatar: '_4',
                 visible: true,
                 messages: [{
