@@ -79,7 +79,7 @@ const root = new Vue({
             {
                 name: 'Pluto',
                 avatar: '_2',
-                visible: false,
+                visible: true,
                 messages: [{
                     date: '20/03/2020 16:30:00',
                     text: 'Ciao come stai?',
@@ -154,7 +154,14 @@ const root = new Vue({
             this.newMessageElement = '';
         },
         contactSearch() {
-
+            const newSearch = this.search.trim().toLowerCase();
+            const result = this.contacts.filter((contact) => {
+                if (contact.name.toLowerCase().includes(newSearch)) {
+                    return contact.visible = true;
+                }
+                return contact.visible = false;
+            })
+            return result;
         },
     },
 });

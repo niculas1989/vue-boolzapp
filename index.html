@@ -74,7 +74,8 @@
                                                     class="fas fa-search fa-1x"></i></button>
                                         </div>
 
-                                        <input type="text" class="form-control" placeholder="Cerca tra i contatti">
+                                        <input type="text" v-model="search" class="form-control"
+                                            placeholder="Cerca tra i contatti" @keyup="contactSearch">
                                     </div>
                                 </div>
 
@@ -82,7 +83,7 @@
 
                                 <div id="contacts">
                                     <ul v-for="(contact, index) in contacts" class="hover">
-                                        <li role="button" @click="setCurrentChat(index)">
+                                        <li v-if="contact.visible == true" role="button" @click="setCurrentChat(index)">
                                             <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
                                                 alt="Foto profilo chat">
                                             <span class="ms-3">{{ contact.name }}</span>
