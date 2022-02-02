@@ -73,7 +73,6 @@
                                             <button class="btn btn-light" type="button"><i
                                                     class="fas fa-search fa-1x"></i></button>
                                         </div>
-
                                         <input type="text" v-model="search" class="form-control"
                                             placeholder="Cerca tra i contatti" @keyup="contactSearch">
                                     </div>
@@ -83,7 +82,8 @@
 
                                 <div id="contacts">
                                     <ul v-for="(contact, index) in contacts" class="hover">
-                                        <li v-if="contact.visible == true" role="button" @click="setCurrentChat(index)">
+                                        <li v-if="contact.visible == true" role="button" @click="setCurrentChat(index)"
+                                            class="active">
                                             <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
                                                 alt="Foto profilo chat">
                                             <span class="ms-3">{{ contact.name }}</span>
@@ -117,8 +117,10 @@
                                         <li v-for="(message, index) in contacts[currentIndex].messages"
                                             class="message-container p-3" :class="message.status">
                                             <div class="message p-2 rounded-3">
+
                                                 <p class="text-message">{{ message.text }}</p>
                                                 <time datetime="2021-08-03t09:53">{{ message.date }}</time>
+                                                <i></i>
                                             </div>
                                         </li>
                                     </ul>
