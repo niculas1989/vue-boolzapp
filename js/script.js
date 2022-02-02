@@ -49,6 +49,7 @@ const root = new Vue({
         newMessageElement: '',
         newAnswerElement: '',
         currentIndex: 0,
+        search: '',
         user: {
             name: 'Topolina',
             avatar: '_io'
