@@ -79,7 +79,7 @@ const root = new Vue({
             {
                 name: 'Pluto',
                 avatar: '_2',
-                visible: true,
+                visible: false,
                 messages: [{
                     date: '20/03/2020 16:30:00',
                     text: 'Ciao come stai?',
@@ -137,16 +137,6 @@ const root = new Vue({
         ]
     },
     methods: {
-        isActive(index) {
-            if (this.visible) {
-                index = this.currentIndex;
-            }
-        },
-        showChat(index) {
-            if (index === this.currentIndex) {
-                this.visible = true;
-            }
-        },
         setCurrentChat(index) {
             this.currentIndex = index;
         },
@@ -162,6 +152,9 @@ const root = new Vue({
 
             }
             this.newMessageElement = '';
+        },
+        contactSearch() {
+
         },
     },
 });
