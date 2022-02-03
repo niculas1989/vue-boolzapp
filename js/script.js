@@ -159,13 +159,17 @@ const root = new Vue({
         },
         contactSearch() {
             const newSearch = this.search.trim().toLowerCase();
-            const result = this.contacts.filter((contact) => {
+            //# serve davvero il filter?
+            //# implementare con un forEach
+
+            //! RAGIONARE MEGLIO SU QUELLO CHE SI FA
+
+            this.contacts.forEach((contact) => {
                 if (contact.name.toLowerCase().includes(newSearch)) {
                     return contact.visible = true;
                 }
                 return contact.visible = false;
-            })
-            return result;
+            });
         },
         deleteText(index) {
             this.contacts[this.currentIndex].messages = this.contacts[this.currentIndex].messages.filter((item, i) => {
