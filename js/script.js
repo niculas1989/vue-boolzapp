@@ -144,6 +144,7 @@ const root = new Vue({
         setCurrentChat(index) {
             this.currentIndex = index;
         },
+        //agginta nuovo messaggio in conversazione
         newMessage() {
             const listElement = this.newMessageElement.trim();
 
@@ -151,12 +152,20 @@ const root = new Vue({
                 this.contacts[this.currentIndex].messages.push({ text: listElement, date: dayjs().format('DD/MM/YYYY HH:mm:ss'), status: 'sent' });
 
                 setTimeout(() => {
-                    this.contacts[this.currentIndex].messages.push({ text: 'ok', date: dayjs().format('DD/MM/YYYY HH:mm:ss'), status: 'received' });
+                    let randomAnswer = ['Si, va bene', 'Ok', 'Ci vediamo dopo', "Fantastico! Non vedo l'ora", 'Non lo so'];
+
+
+                    this.contacts[this.currentIndex].messages.push({
+                        text: randomAnswer[Math.floor(Math.random() * randomAnswer.length)],
+                        date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+                        status: 'received'
+                    });
                 }, 2000)
 
             }
             this.newMessageElement = '';
         },
+        // ricerca di un contatto
         contactSearch() {
             const newSearch = this.search.trim().toLowerCase();
             //# serve davvero il filter?

@@ -90,8 +90,7 @@
                                         <li v-if="contact.visible" role="button" @click="setCurrentChat(index)"
                                             class="active">
                                             <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
-                                                alt="`Foto profilo ${contact.name}`"
-                                                :class="{active: currentIndex == index}">
+                                                alt="`Foto profilo ${contact.name}`">
                                             <span class="ms-3">{{ contact.name }}</span>
                                         </li>
                                     </ul>
