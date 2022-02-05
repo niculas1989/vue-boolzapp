@@ -33,7 +33,8 @@
                             <div class="row">
                                 <div class="col-12 background-gray d-flex align-items-center justify-content-between">
                                     <div>
-                                        <img class="w-25" :src="`img/avatar${user.avatar}.jpg`" alt="Foto Profilo">
+                                        <img class="w-25" :src="`img/avatar${user.avatar}.jpg`"
+                                            alt="`Foto Profilo ${user.name}`">
                                         <span>{{ user.name }}</span>
                                     </div>
                                     <div class="d-flex">
@@ -89,7 +90,8 @@
                                         <li v-if="contact.visible" role="button" @click="setCurrentChat(index)"
                                             class="active">
                                             <img class="w-25" :src="`img/avatar${contact.avatar}.jpg`"
-                                                alt="Foto profilo chat">
+                                                alt="`Foto profilo ${contact.name}`"
+                                                :class="{active: currentIndex == index}">
                                             <span class="ms-3">{{ contact.name }}</span>
                                         </li>
                                     </ul>
@@ -108,7 +110,8 @@
                                 class="col-12 background-gray d-flex align-items-center justify-content-between">
                                 <div class="h-100">
                                     <img class="h-100" id="user-pic"
-                                        :src="`img/avatar${contacts[currentIndex].avatar}.jpg`" alt="Foto Profilo chat">
+                                        :src="`img/avatar${contacts[currentIndex].avatar}.jpg`"
+                                        alt="`Foto Profilo chat ${contacts[currentIndex].name}`">
                                     <span>{{ contacts[currentIndex].name }}</span>
                                 </div>
                                 <div class="d-flex">
