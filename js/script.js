@@ -51,7 +51,6 @@ const root = new Vue({
     el: '#root',
     data: {
         newMessageElement: '',
-        newAnswerElement: '',
         currentIndex: 0,
         search: '',
         user: {
